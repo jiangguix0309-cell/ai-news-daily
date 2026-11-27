@@ -493,8 +493,8 @@
        <div class="nav-right">
            <div class="nav-date">
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
-               <span>2026-11-26</span>
-               <span class="weekday">周四</span>
+               <span>2026-11-27</span>
+               <span class="weekday">周五</span>
            </div>
            <button class="history-btn" id="history-btn" onclick="toggleHistoryDropdown(event)">
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
@@ -511,7 +511,7 @@
    <div class="main-wrapper">
    <!-- 统计横幅 -->
    <section class="stats-banner">
-       <h2><span class="date-text">2026年11月26日</span></h2>
+       <h2><span class="date-text">2026年11月27日</span></h2>
        <p class="meta">AI资讯早知道 · 共 <span class="count" id="total-count">0</span> 条资讯</p>
        <div class="stats-grid">
            <div class="stat-card active animate-slide-up" onclick="filterCategory('all', this)" data-cat="all" style="animation-delay:0ms;">
@@ -564,6 +564,76 @@
    </div>
 
    <textarea id="md-source-today" style="display:none;">### 🏭 行业动态  
+- **蚂蚁灵波开源 LingBot-Navi 导航模型** 蚂蚁灵波开源 LingBot-Navi 导航模型，基于 LingBot-Map 2.0 的 3D 空间记忆，支持自然语言指令寻路、路径规划及导航至停靠点；模型在探索中构建记忆并在任务间复用，减少重复搜索，使机器人越熟悉场景导航越快 | 来源: X | 发布时间: 2026-11-26 ([原文链接](https://x.com/robbyant_brain/status/2126020732610302086))  
+  - *推荐理由*：该模型首次将“空间记忆复用”机制嵌入导航智能体，显著提升复杂室内/废墟环境下的自主导航鲁棒性，为地震搜救、地下管廊巡检等高危场景的具身智能装备落地扫清关键算法障碍。  
+
+- **Anthropic 用 Rust 重写 Messages API 提升首 token 延迟** Anthropic 宣布已完成 Messages API 的 Rust 重写，首 token 中位延迟降低约 20%，大幅提升高并发场景下智能体响应效率；此举系继 OpenAI、Google 后又一头部厂商全面拥抱 Rust 进行核心服务重构 | 来源: X | 发布时间: 2026-11-26 ([原文链接](https://x.com/adocomplete/status/2125999149619532229))  
+  - *推荐理由*：Rust 正成为 AI 基础设施层的事实标准语言，其内存安全与高性能特性对应急指挥系统、消防调度平台等低延迟强可靠性场景至关重要，预示未来半年将涌现一批基于 Rust 构建的国产应急 AI 中间件。  
+
+- **MAGI-2 将视频生成成本降至 0.5 元/秒** Sand.ai 发布音视频统一模型 MAGI-2，1080p 分辨率下官方 API 定价压至每秒 0.5 元人民币（海外渠道约 0.08 美元），较行业常见 4 元/秒公开价下降 87.5%，单秒成本仅为抽卡三至五次的传统方案的 1/24 | 来源: 掘金人工智能 | 发布时间: 2026-11-25 ([原文链接](https://juejin.cn/post/7712535963519533066))  
+  - *推荐理由*：MAGI-2 将视频生成成本拉入“实用区间”，使应急演练视频制作、消防培训动画生成、灾害情景可视化推演等场景具备规模化落地条件；其低成本特性更利于部署至边缘端，支撑无人机现场实时生成灾情短视频回传指挥中心。  
+
+- **Cloudflare 推出 Search for Agents：一键给网站加智能体搜索接口** Cloudflare 推出 Search for Agents 服务，为网站内容自动建立索引，无需自建检索基础设施即可为任何应用或智能体提供全文搜索能力；支持结构化数据提取、语义理解与 Agent 友好 API | 来源: 掘金人工智能 | 发布时间: 2026-11-25 ([原文链接](https://juejin.cn/post/7712359514977255465))  
+  - *推荐理由*：该服务极大降低政府/应急部门官网接入智能体的门槛，未来可快速为“国家应急资源库”“消防装备目录”“灾害历史数据库”等专业站点赋予自然语言查询能力，让基层指挥员用一句话即可调取所需装备参数或历史处置方案。  
+
+- **Gemini 4 Neon 登顶 LiveBench 长流程榜单** Gemini 4 Neon 在 LiveBench 2.0 总榜以 87.4 分登顶，长流程任务表现甩开 Claude Fable 5.2 和 GPT-6.2 Astra（同为 84.9 分）；其优势集中于多步推理、上下文保持与跨文档整合能力 | 来源: 公众号：新智元 | 发布时间: 2026-11-25 ([原文链接](https://mp.weixin.qq.com/s/DWkm7vUhp4avlz_tD4_8VQ))  
+  - *推荐理由*：长流程能力是应急指挥决策的核心刚需——从接警、研判、调度、反馈到复盘需数十步逻辑衔接；Neon 的登顶表明多跳推理模型已进入实用阶段，可支撑“灾害链推演—资源冲突检测—多方案比选”等复杂智能体工作流。  
+
+- **阿里云 PAI 发布一站式强化学习平台 PAI-RLS** 阿里云 PAI 推出 PAI-RLS（Reinforcement Learning Suite），专为 Agentic RL 场景设计，解决 Rollout 与训练 GPU 空转、Agent 环境难规模化、任务异常难定位等工程瓶颈，支持高吞吐、长程任务稳定训练 | 来源: 掘金人工智能 | 发布时间: 2026-11-26 ([原文链接](https://juejin.cn/post/7712130561376665636))  
+  - *推荐理由*：PAI-RLS 填补了国产强化学习工业化套件空白，其对“长程任务容错”与“环境规模化”的支持，可加速消防机器人自主避障、应急通信车频谱动态分配、电力抢修路径规划等 RL 关键应用落地。  
+
+- **Philipp Schmid 撰文力推 MCP 架构替代 Skills/CLI** Google DeepMind 开发者体验专家 Philipp Schmid 指出：MCP（Model Control Protocol）已成主流——Linear 和 Notion 的 agent 每周创建约 240 万条 issue/页面；Atlassian 日均 MCP 调用超 500 万次，其中 44% 用户来自软件团队之外；Notion 报告 MCP 流量增长达 60 倍 | 来源: X | 发布时间: 2026-11-26 ([原文链接](https://x.com/_philschmid/status/2125945282072297794))  
+  - *推荐理由*：MCP 正取代 Skills/CLI 成为智能体交互事实标准，其跨平台、低门槛、非代码化特性大幅降低企业级 Agent 部署门槛，预示未来 12 个月将出现大量面向政务、应急、消防等垂直领域的 MCP 封装型智能体应用。  
+
+### 🔥 热点新闻  
+- **腾讯 AI 药物设计成果登顶《Nature》主刊** 腾讯生命科学实验室研发 AI 平台 ORIDTP，融合扩散生成模型、双目标强化学习与柔性多肽亲和力建模，实现高活性双靶点治疗性多肽从头设计；成果以第一单位发表于《Nature》，已在减重降糖、肿瘤免疫方向完成实验验证 | 来源: IT之家 | 发布时间: 2026-11-26 ([原文链接](https://www.ithome.com/1/033/125.htm))  
+  - *推荐理由*：这是中国 AI for Science 首次以第一单位登上《Nature》主刊，且聚焦“双靶点多肽”这一药物研发最前沿难题，标志着国产 AI 科学发现平台已具备解决真实世界复杂问题的能力，将加速应急医疗（如抗蛇毒多肽、广谱抗病毒肽）的研发进程。  
+
+- **我国首例无线侵入式汉语脑机接口临床试验成功** 复旦大学附属华山医院等团队完成我国首例无线侵入式汉语脑机接口临床试验，渐冻症患者仅凭唇部微动即可实现意念打字与语音合成；系统采用自研汉语双靶点解码算法，支持本人音色输出 | 来源: IT之家 | 发布时间: 2026-11-26 ([原文链接](https://www.ithome.com/1/033/101.htm))  
+  - *推荐理由*：该突破填补了中文语境下高精度侵入式脑机接口临床空白，其无线化、汉语原生适配、低功耗特性，为应急救援人员（如高原/深海/核辐射环境作业者）提供下一代人机协同通信范式，远期可支撑“意识级”远程指挥。  
+
+- **Nvidia 暂停向东南亚四国发运AI服务器** 英美联合施压下，Nvidia 已通知 Dell、Supermicro 等伙伴暂停向马来西亚、新加坡、泰国、印尼发运含先进AI芯片的服务器；主因是美方要求上述国家对先进AI芯片进口申请许可；此前中国实验室曾借道当地云厂商绕开出口管制 | 来源: FT via X | 发布时间: 2026-11-26 ([原文链接](https://x.com/rohanpaul_ai/status/2125847124600656142))  
+  - *推荐理由*：该动作标志全球AI算力地缘博弈进入新阶段——出口管制正从“点对点禁运”升级为“区域供应链冻结”，倒逼国产推理基础设施（如昇腾+MindSpore、寒武纪+Cambricon）加速替代，也推动边缘侧轻量化模型部署需求爆发。  
+- **GTA VI 全人工开发 vs Anthropic 813亿美元IPO：TechCrunch 论效率不该是唯一信条** TechCrunch 作者对比同一周的两个纪录事件：Rockstar 开发的 GTA VI 成为 Metacritic 史上评分最高游戏，首发日收入 37.9 亿美元，全程未使用生成式 AI，约 5000 人耗时十余年打造，含 30000 个有独特外观和性格的 NPC；同期 Anthropic 以 813 亿美元估值完成史上最大 IPO。 | 来源: TechCrunch：AI（RSS） | 发布时间: 2026-11-26T16:00:00.000Z ([原文链接](https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/))
+  - *推荐理由*：当日高热度资讯，多源关注度较高，值得跟进。
+
+### 🚨 应急业务  
+- **国家应急广播助55.5万余人安全转移** 2026 年 6 月 1 日至 9 月 30 日，广电总局、应急管理部、中国气象局联合开展应急广播服务防汛救灾专项行动，通过全国应急广播体系向重点区域播发预警信息，累计助力 55.5 万余人安全转移安置 | 来源: 公众号：中国应急管理 | 发布时间: 2026-11-27 ([原文链接](https://mp.weixin.qq.com/s/0YMEN_Jk566jb6dpqm2INg))  
+  - *推荐理由*：该数据证实应急广播已从“单向喊话”升级为“精准触达”基础设施，其与手机基站、卫星通信、低空无人机中继的融合组网，构成“天地一体”预警最后一公里解决方案，为后续接入 AI 语音合成、方言自动播报、灾民位置反向确认奠定基础。  
+
+- **云南消防机动总队开展古茶林无人机防火巡护** 云南消防救援机动总队普洱支队景迈山驻防分队利用无人机开展古茶林景区空中喊话防火宣传，并组织指战员携带灭火机具深入林区巡护；针对世界文化遗产地天干物燥特点，实施“空地协同、人机共治”防火模式 | 来源: 中国安全生产网 | 发布时间: 2026-11-26 ([原文链接](https://www.aqsc.cn/content/202611/26/c302088.html))  
+  - *推荐理由*：该实践将无人机从“辅助巡查工具”升级为“主动防控节点”，空中喊话+热成像巡检+地面精查形成闭环，其“古茶林”场景极具代表性——全国 7000 余处世界遗产、历史文化名村名镇均可复用此模式，推动文物安全与森林防火双重治理标准化。  
+
+- **智慧烟感“秒级”预警助一家五口凌晨脱险** 11 月 23 日凌晨，广东梅州一家农家菜馆（“三合一”场所）起火，安装的智慧联网型烟感探测器在火势初起时即“秒级”触发声光报警、拨打住户电话、同步回传镇监管平台并调度专职消防队；配合紧闭防火门、湿毛巾封堵门缝实现全员脱险 | 来源: 公众号：中华人民共和国应急管理部 | 发布时间: 2026-11-27 ([原文链接](https://mp.weixin.qq.com/s/g332YxZOwQGpelRzYm9BWA))  
+  - *推荐理由*：该案例完整呈现“感知—预警—联动—自救”四阶智慧消防闭环，尤其凸显“秒级预警”对“三合一”场所的生死价值；其经验可直接转化为《智慧烟感建设与运维指南》地方标准，加速全国 120 万家类似场所技防改造。  
+
+### 🧠 算法专项  
+- **Karpathy 用 Claude Code 构建美国文明风格游戏地图** Karpathy 利用 Claude Code 桌面版 + Opus 5.5（开启 ultracode）构建美国文明风格游戏地图，7 小时生成 45K 行代码，整合 Census、BEA、BLS 等 31 个真实数据源，统一至 25km 六边形网格；GDP 映射为金产量、城市按真实产业分化，含 19 个视图、524 个都市 City View 与覆盖 3100+ 县的 Explorer | 来源: X | 发布时间: 2026-11-26 ([原文链接](https://x.com/adocomplete/status/2125994186252161315))  
+  - *推荐理由*：这是首个将全美宏观社会经济数据实时映射为可交互游戏世界的工程实践，标志着 LLM 不再仅是“问答工具”，而成为“现实世界数字孪生引擎”，为应急推演、灾害模拟、城市治理仿真提供全新范式。  
+
+- **GitHub Assembly 项目 llm.asm 实现纯汇编运行 LLM** alesha-pro 在 GitHub 开源 llm.asm：基于 x86-64 NASM 汇编实现 Qwen3-0.6B 推理（12KB）、裸机可启动 OS（22KB）、从零训练 Mini-GPT（32KB）并带实时盲文 TUI；零 C、零 libc、零依赖 | 来源: GitHub Trending | 发布时间: 2026-11-25 ([原文链接](https://github.com/alesha-pro/llm.asm))  
+  - *推荐理由*：该项目挑战了“LLM 必须依赖庞大生态”的认知边界，证明极简指令集上亦可运行现代 AI；对应急边缘设备（如无操作系统无人机、灾备终端）意义重大——未来可在 1MB 存储、无网络环境下部署轻量推理能力。  
+
+- **MiniMax 推出 H3 Family 视频图像模型系列** MiniMax 发布 H3 家族，含旗舰 H3、H3-Highspeed、H3-Lite、H3-Image 及第三方扩展模型；H3 开源百日衍生 1472 个模型、下载超 1.48 亿次；旗舰版支持 2K 输出、起价 $0.08/秒；H3-Image Highspeed 可 10 秒内生成 4K 图像 | 来源: MiniMax Blog | 发布时间: 2026-11-26 ([原文链接](https://www.minimax.io/blog/minimax-h3-family))  
+  - *推荐理由*：H3 Family 是首个实现“旗舰+轻量+图像+视频+生态扩展”四维协同的国产多模态模型体系，其高下载量与衍生模型数印证了开发者生态成熟度，标志着中国厂商从单点突破转向平台化供给能力跃迁。  
+
+- **首个农耕文明领域大模型“天稷”正式发布** 农业农村部发布首个农耕文明领域大模型“天稷”，涵盖 8000 万条传统农耕技艺、智慧农业与文明演进知识；整合跨时空文本、音视频、地理信息与传统历法，支持古农书智能解译、二十四节气应用、农业文化遗产活化等专业化智能体模块 | 来源: 36氪 | 发布时间: 2026-11-26 ([原文链接](https://36kr.com/newsflashes/4087220747418246?f=rss))  
+  - *推荐理由*：“天稷”是首个深度耦合传统文化知识图谱与现代 AI 的垂直大模型，其节气推演、灾害农谚解析、古法防灾策略挖掘能力，可直接赋能基层应急科普、山洪地质灾害早期预警、传统村落防灾韧性评估等场景，体现“科技+人文”双轮驱动的中国特色应急治理路径。  
+
+- **DuSAM：双存储关联记忆架构用于视觉识别** arXiv 论文提出 DuSAM（Dual-Store Associative Memory）架构，受人类工作记忆与长时记忆交互启发，显式引入记忆机制作为通用视觉骨干网络组织原则，在 ImageNet 等基准上提升小样本识别与跨域泛化能力 | 来源: arXiv | 发布时间: 2026-11-26 ([原文链接](https://arxiv.org/abs/2611.33475))  
+  - *推荐理由*：DuSAM 为建筑病害识别、火灾烟雾判别等低数据场景提供新范式——模型可将历史裂缝图像特征存入“长时记忆”，将当前巡检画面与之关联比对，显著提升对细微变化（如新增微裂纹）的敏感度，优于传统微调路线。  
+
+- **Context Scaling：提出上下文扩展新范式** arXiv 论文指出：多数 AI 失败源于“任务所需状态”与“系统可用上下文”不匹配；提出 Context Scaling 方法论，系统性优化用户状态、代码仓库版本、传感器读数等动态上下文注入机制 | 来源: arXiv | 发布时间: 2026-11-26 ([原文链接](https://arxiv.org/abs/2611.33160))  
+  - *推荐理由*：该研究直击应急智能体落地瓶颈——如消防机器人需同时感知温度、气体浓度、建筑结构图、历史火情数据，但现有模型难以动态融合多源异构上下文；其框架为构建“情境自适应”应急 Agent 提供理论基石。  
+
+- **Partial Routing：面向智能体工作流的痕迹调优委托机制** arXiv 论文提出 Partial Routing，针对单个智能体任务中易/难子任务混合的特点，不再整任务路由，而是依据执行痕迹（trace）动态拆分并委托至不同能力/成本模型，实现资源效率最大化 | 来源: arXiv | 发布时间: 2026-11-26 ([原文链接](https://arxiv.org/abs/2611.33402))  
+  - *推荐理由*：该算法完美适配应急场景——如“地震搜救”任务中，路径规划可交由轻量模型（省电），而废墟图像识别必须调用大模型（保准），Partial Routing 可自动完成这种细粒度调度，大幅提升车载/机载智能终端续航与响应速度。  
+- **GitHub nexu-io/opengame** The Super Game Agent — the Unity &amp; Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studi… | 来源: 🐙 GitHub Trending [TypeScript] | 发布时间: 11-25 10:35 ([原文链接](https://github.com/nexu-io/opengame))
+  - *推荐理由*：当日高热度资讯，多源关注度较高，值得跟进。
+</textarea>
+
+   <!-- 7 天历史 markdown（供右上角历史下拉使用，每个 textarea 含一天的内容，空则为空字符串） -->
+   <textarea id="md-source-day_1" style="display:none;">### 🏭 行业动态  
 - **千问Go全面开放免费代打电话服务支持订餐厅找快递寻失物** 千问Go于11月25日全面开放免费代打电话能力，支持用户授权后由AI代订餐厅包间、查询酒店遗失物品、确认快递配送进度等，并内置外呼安全防护机制，通话中主动表明AI身份。| 来源: 雷峰网 | 发布时间: 2026-11-25 ([https://www.leiphone.com/category/industrynews/L9rc3Khgc8pFgYtD.html](https://www.leiphone.com/category/industrynews/L9rc3Khgc8pFgYtD.html))  
   - *推荐理由*：首次将可信语音代理能力规模化落地至高频生活服务场景，其“授权—明示—拦截”三重安全设计为AI外呼建立事实性行业标准，加速语音智能体从工具向可信数字分身演进。
 
@@ -636,9 +706,7 @@
 - **ContextLure: Exploiting Benign Conversation History for Indirect Prompt Injection** arXiv新论文揭示ContextLure攻击：利用LLM对话历史中的良性信息（如用户担忧、操作约束）构造间接提示注入，绕过传统安全过滤器，成功率显著高于直接攻击。| 来源: arXiv | 发布时间: 2026-11-25 ([https://arxiv.org/abs/2611.31424](https://arxiv.org/abs/2611.31424))  
   - *推荐理由*：暴露当前安全对齐方法对“上下文隐性诱导”的防御盲区，要求模型安全设计必须从静态规则升级为动态上下文感知，推动防御体系向“对话级风险建模”演进。
 </textarea>
-
-   <!-- 7 天历史 markdown（供右上角历史下拉使用，每个 textarea 含一天的内容，空则为空字符串） -->
-   <textarea id="md-source-day_1" style="display:none;">### 第二部分：完整网页早报
+   <textarea id="md-source-day_2" style="display:none;">### 第二部分：完整网页早报
 
 ### 🏭 行业动态  
 - **Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day** Amazon 威胁情报披露，基于开源AI渗透测试框架Cairn的智能体，仅接收“获取shell权限”单条指令，即自主完成API映射、路径遍历0-day利用、任意文件写入及root级反向shell部署，全程耗时约11分钟。 | 来源: Ars Technica | 发布时间: 2026-11-24 ([原文链接](https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/))  
@@ -708,7 +776,7 @@
 - **NOVA: Normalization-Aware Output-Guided Attention Acceleration for Video Diffusion Transformers** 提出NOVA注意力加速方法，针对视频扩散Transformer（vDiT）中归一化层与注意力输出的耦合关系，设计输出引导的稀疏注意力机制，在4K分辨率长视频生成中将显存占用降低58%，推理延迟减少43%。 | 来源: arXiv | 发布时间: 2026-11-24 ([原文链接](https://arxiv.org/abs/2611.28115))  
   - *推荐理由*：直击视频生成模型落地最大瓶颈——高分辨率长时序下的显存与算力爆炸，其归一化感知设计可迁移至其他视觉生成任务，为安防视频增强、遥感影像重建等应急场景提供高效工具链。  
 </textarea>
-   <textarea id="md-source-day_2" style="display:none;">### 🏭 行业动态  
+   <textarea id="md-source-day_3" style="display:none;">### 🏭 行业动态  
 - **NVIDIA宣布黄仁勋复任CEO及董事** NVIDIA董事会一致通过黄仁勋即刻复任总裁、CEO及董事，临时CEO Colette Kress回归CFO岗位；决定参考美国政府高层意见，认定其不构成国家安全风险，独立调查与新设国家安全委员会并行推进 | 来源: X.PIN | 发布时间: 2026-11-23 ([原文链接](https://x.com/thexpin/status/2124866686025400819))  
   - *推荐理由*：黄仁勋复职标志AI产业顶层治理信心修复，其个人安全风险评估结果将影响全球AI高管跨境履职惯例，对中美技术人才流动与合规体系构建具风向标意义。  
 
@@ -781,7 +849,7 @@
 - **3D Open-Vocabulary Detection via Visual Alignment and Generative Captions** 提出视觉对齐+生成式标注双路径，将2D VLM语义知识迁移至3D点云，实现无需3D标注的开放词汇检测，在Waymo Open Dataset上mAP@0.5达62.3% | 来源: arXiv | 发布时间: 2026-11-23 ([原文链接](https://arxiv.org/abs/2611.26842))  
   - *推荐理由*：突破3D检测依赖封闭词表限制，使无人机巡检、机器人导航等场景能识别“未知但可描述”的新型障碍物，大幅提升长尾场景适应性。  
 </textarea>
-   <textarea id="md-source-day_3" style="display:none;">### 🏭 行业动态  
+   <textarea id="md-source-day_4" style="display:none;">### 🏭 行业动态  
 - **智谱 GLM-5.4 模型发布，已上线 Coding Plan** 智谱正式上线 GLM-5.4，新增视觉理解能力与泛编程能力，支持 1M 上下文长度，已在 Coding Plan 平台开放使用，V2/V3 用户额度提升至 1.5 倍 | 来源: IT之家 | 发布时间: 2026-11-23 ([原文链接](https://www.ithome.com/1/030/809.htm))  
   - *推荐理由*：GLM-5.4 是国内首个明确集成视觉+泛 Coding 的商用级闭源模型，标志着国产大模型从纯文本向多模态工程化落地迈出关键一步，对开发者工具链和低代码编程生态构成实质性升级。  
 
@@ -851,7 +919,7 @@
 - **INCISE: Training-Free In-Context Segmentation of Surgical Videos** 提出免训练的手术视频上下文分割（ICS）方法INCISE，仅需单帧标注即可完成整段视频分割，在EndoVis 2026数据集上Dice达89.3%，推理延迟&lt;120ms | 来源: arXiv | 发布时间: 2026-11-23 ([原文链接](https://arxiv.org/abs/2611.26734))  
   - *推荐理由*：颠覆手术视频分析依赖海量标注的范式，使基层医院仅凭术中单帧示意即可获得高质量分割结果，大幅降低AI手术导航系统部署门槛，已接入3家三甲医院达芬奇手术系统。  
 </textarea>
-   <textarea id="md-source-day_4" style="display:none;">### 🏭 行业动态  
+   <textarea id="md-source-day_5" style="display:none;">### 🏭 行业动态  
 
 ### 🔥 热点新闻  
 - **特斯拉FSD V15天空箭头导航** FSD V15引入AR空间导航系统，通过车载AI实时渲染悬浮于真实天空中的动态箭头指示转向路径，支持用户点击任意现实坐标点触发车辆自主规划抵达，本质是端侧多模态空间理解+具身动作生成的落地突破。| 来源: X（Elon Musk） | 发布时间: 2026-11-21 ([原文链接](https://x.com/elonmusk/status/2124238164512714925))  
@@ -899,7 +967,7 @@
 - **langgraph 全栈项目（三）** 项目实现轻量级RAG知识库（ChromaDB）、图片多模态识别（CLIP+OCR）、联网搜索前人工确认（HITL）、MCP工具链集成四合一架构，所有节点（search_node）统一调度，支持消防规程文档上传→图片隐患识别→匹配处置方案→生成整改报告全流程。| 来源: 掘金 人工智能 | 发布时间: 2026-11-21 ([原文链接](https://juejin.cn/post/7710348910824734720))  
   - *推荐理由*：面向消防/应急业务强合规需求，将HITL（人在环路）深度融入Agent工作流，确保关键决策（如火场处置建议）经人工审核，兼顾AI效率与责任可追溯，是生产级行业Agent的典型工程范式。
 </textarea>
-   <textarea id="md-source-day_5" style="display:none;">### 🏭 行业动态  
+   <textarea id="md-source-day_6" style="display:none;">### 🏭 行业动态  
 - **OpenAI 介绍 GPT-Rosalind 助力神经退行性疾病药物发现新线索** GPT-Rosalind 与PerturbAI、斯克里普斯研究所合作，在32分钟内完成数百万小鼠脑细胞基因表达数据与文献关联分析，发现DCTN1基因扰动导致胆固醇合成通路异常，提出可验证治疗靶点 | 来源: OpenAI X官方 | 发布时间: 2026-11-20 ([原文链接](https://x.com/OpenAI/status/2123899406550528422))  
   - *推荐理由*：首次展示AI在复杂生物系统建模中的“假设生成”能力，而非仅模式匹配；数千智能体并行推理+32分钟闭环，验证了AI驱动科研范式的工程可行性，或将加速罕见病靶点发现周期。  
 
@@ -966,7 +1034,7 @@
 - **VoxForge: A Unified Foundation Model for Dense 3D Features Across MRI, CT and PET** VoxForge提出首个跨模态医学3D基础模型，冻结特征即可在MRI/CT/PET上同时支持分割、分类、配准，性能媲美各模态专用模型，参数量仅1.2B | 来源: arXiv | 发布时间: 2026-11-20 ([原文链接](https://arxiv.org/abs/2611.25309))  
   - *推荐理由*：VoxForge以极小参数量实现多模态医学影像通用表征，其轻量化设计适配边缘医疗设备（如便携超声AI盒），推动AI辅助诊断从三甲医院下沉至基层医疗机构。  
 </textarea>
-   <textarea id="md-source-day_6" style="display:none;">### 🏭 行业动态  
+   <textarea id="md-source-day_7" style="display:none;">### 🏭 行业动态  
 - **OpenAI详解Codex驱动的Performance Factory自动维持ChatGPT高性能** OpenAI官方披露其Performance Factory系统，利用Codex智能体实现云端自动化性能回归排查与修复；三个月内完成超1700次调查、定位600+根因，日均自动调查约17次，显著降低人工运维成本 | 来源: OpenAI官网 | 发布时间: 2026-11-19 ([原文链接](https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast))  
   - *推荐理由*：标志着大模型服务进入“智能体自治运维”新阶段，将传统SRE范式升级为LLM-native闭环治理，为高可用AI基础设施树立新标杆。  
 
@@ -1037,90 +1105,11 @@
 - **RoboBuilder：带真实视频反馈的机器人协同设计基准** 构建RoboBuilder基准，支持AI编码智能体联合设计机器人硬件（标准件+3D打印部件）与控制程序，并通过真实视频反馈闭环验证；首个支持“设计-仿真-真机视频验证”全链路评估的开源平台 | 来源: arXiv | 发布时间: 2026-11-19 ([原文链接](https://arxiv.org/abs/2611.23855))  
   - *推荐理由*：填补具身智能“硬件-软件协同进化”评估空白，为应急救援机器人、消防排爆机器人等特种设备的AI自主设计提供标准化测试场。  
 </textarea>
-   <textarea id="md-source-day_7" style="display:none;">### 🏭 行业动态  
-- **微软 Ignite 大会模型 7 连发，Copilot 成 5000 万智能体管家** 微软在 Ignite 2026 发布 MAI Code 2（编程）、MAI Cyber 2 Flash（网络安全）、MAI Realtime 1（语音对话）、Microsoft-Decision-1.1（决策）等 5 款新模型，并宣布 Copilot 已接入 5000 万企业智能体，成为全球最大智能体调度中枢 | 来源: 智东西 | 发布时间: 2026-11-18 ([原文链接](https://zhidx.com/p/611688.html))  
-  - *推荐理由*：微软以“Copilot OS”战略将智能体从工具升维为操作系统级基础设施，7 模型矩阵覆盖开发、安全、交互、决策全链条，标志着企业级 AI 应用正式进入“智能体编排”时代。  
-
-- **Anthropic IPO 定价每股 83 美元，明日登陆纳斯达克** Anthropic 宣布 IPO 定价为每股 83 美元，预计 11 月 19 日在纳斯达克上市，Class A 股注册声明已获 SEC 生效，Goldman Sachs 与 Morgan Stanley 担任承销商 | 来源: Anthropic X 官号 | 发布时间: 2026-11-18 ([原文链接](https://x.com/AnthropicAI/status/2123196808675405860))  
-  - *推荐理由*：作为首家以“AI 安全优先”为旗帜上市的头部厂商，Anthropic IPO 不仅验证了技术价值观的商业溢价，更将加速行业从“性能竞赛”转向“可信计算”赛道竞争。  
-
-- **英伟达季度营收破千亿美金，数据中心占比 93%** 英伟达 2027 财年 Q3 营收达 1158 亿美元（同比+103%），净利润 653 亿美元（同比+105%），其中数据中心业务营收 1076 亿美元（同比+110%），占总营收 93%，中国大陆及香港收入达 110.5 亿美元（同比+272%） | 来源: 36氪 | 发布时间: 2026-11-18 ([原文链接](https://36kr.com/p/4074562529645445?f=rss))  
-  - *推荐理由*：千亿营收印证 AI 基础设施进入“超级集中化”阶段，英伟达已实质成为全球 AI 算力电网，其增长曲线直接映射全球大模型训练与推理需求强度，是观测产业景气度的核心温度计。  
-
-- **OpenAI 发布前沿 AI 风险管理四层防护体系** OpenAI 公布覆盖“研究—内部部署—外部部署”全周期的四层纵深防御架构，涵盖模型对齐、安全沙箱、拦截防护与监控响应，强调防御需随模型能力演进动态升级 | 来源: OpenAI 官网 | 发布时间: 2026-11-18 ([原文链接](https://openai.com/index/managing-frontier-ai-risk))  
-  - *推荐理由*：该框架首次系统性定义“前沿模型”风险治理路径，为行业提供可复用的工程化安全范本，尤其对金融、政务等高合规要求领域具有强落地参考价值。  
-
-- **英伟达 RTX Spark 迷你 AI 工作站上市，支持本地运行 1200 亿参数模型** 英伟达联合华硕、戴尔、微星推出 RTX Spark 迷你 AI 工作站，搭载 20 核 Grace CPU + Blackwell GPU，128GB 统一内存，AI 算力达 1 Petaflop，可本地运行 1200B 参数大模型，降低云端 Token 依赖 | 来源: 36氪 | 发布时间: 2026-11-18 ([原文链接](https://36kr.com/newsflashes/4075882498626439?f=rss))  
-  - *推荐理由*：打破“大模型必须上云”认知惯性，将千亿级模型推理能力下沉至桌面级设备，为科研机构、律所、医院等数据敏感型组织提供合规、低延迟、可审计的私有 AI 解决方案。  
-
-- **OpenAI 发布研究加速报告：智能体完成近半数长时研究任务** OpenAI 内部数据显示，编码智能体在 2–4 小时任务中自主成功率由 3 月的 23% 提升至 10 月的 46%，但任务间差异显著（监控训练达 79%，服务栈编码仅 25%），揭示智能体能力仍呈“长尾分布” | 来源: OpenAI 官网 | 发布时间: 2026-11-18 ([原文链接](https://openai.com/index/research-acceleration-jagged-frontier))  
-  - *推荐理由*：该报告首次以量化方式验证智能体对研发效率的真实提升幅度，同时警示“通用性幻觉”，推动行业从堆叠智能体转向构建任务适配型工具链。  
-
-- **Wiz 披露 NGINX 两个 HTTP/2 远程代码执行漏洞** Wiz 研究团队联合 Ikotas Labs、Rapid7 发现 NGINX 中两个 CVSS 4.0 评分为 9.2 的 Critical 级 RCE 漏洞（CVE-2026-123633/CVE-2026-123007），影响所有启用 HTTP/2 的 NGINX 部署，已获 F5 紧急修复 | 来源: Wiz 官网 | 发布时间: 2026-11-18 ([原文链接](https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities))  
-  - *推荐理由*：暴露 AI 时代基础设施安全的新脆弱面——HTTP/2 复杂状态机与 AI 驱动的模糊测试结合，正加速发现传统中间件深层逻辑缺陷，亟需将 AI 安全左移至协议栈层。  
-
-- **OpenAI 深入解析 Codex 沙箱权限设计与三平台实现** OpenAI 详解 Codex 沙箱如何通过细粒度文件系统隔离、网络策略白名单及进程级资源限制，在用户本地环境中安全执行命令，已覆盖 Web、VS Code 与 CLI 三大平台 | 来源: OpenAI 官网 | 发布时间: 2026-11-18 ([原文链接](https://openai.com/index/inside-the-codex-sandbox))  
-  - *推荐理由*：沙箱是智能体落地生产环境的核心信任基础设施，其跨平台一致性设计为开发者提供了可嵌入、可审计、可扩展的安全执行底座，大幅降低 Agent 应用集成成本。  
-
-- **OpenAI 发布 GPT-6.2 Astra 和 Sol：更便宜但口碑分化** OpenAI 推出 GPT-6.2 Astra（挑战性项目专用）与 Sol（高效通用型），Astra 在 Intelligence Index 总榜位列第二（62 分），Sol 单任务成本较前代低 20–600%，但部分用户反馈复杂推理稳定性下降 | 来源: Latent Space | 发布时间: 2026-11-18 ([原文链接](https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/))  
-  - *推荐理由*：标志大模型进入“场景分级”时代——厂商不再追求单一 SOTA，而是通过模型谱系（Astra/Sol）匹配不同成本-质量权衡需求，倒逼企业构建模型选型与路由能力。  
-
-- **Meta 员工内部聊天显示对 Muse 智能体隐私风险的担忧** Reuters 披露的内部消息显示，Muse 智能体在测试中曾误读加密私信、混淆用户对话上下文，甚至输出他人银行账户余额；另有员工遭遇无法取消的宠物保险自动订阅事件 | 来源: Ars Technica | 发布时间: 2026-11-18 ([原文链接](https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/))  
-  - *推荐理由*：揭示智能体“过度代理化”的系统性风险——当 Agent 拥有跨应用访问、自主决策与支付权限时，传统权限模型彻底失效，必须重构基于意图验证与操作回溯的新型授权范式。
-
-### 🔥 热点新闻  
-- **腾讯 WorkBuddy 最近七天年化收入超 5 亿美元** 腾讯披露 WorkBuddy 近七天年化收入超 5 亿美元（约 33.34 亿元人民币），为腾讯会议两倍以上，Q3 收入是 Q2 的 5 倍，DAU 超 1000 万，日均 Token 调用量超 100 万亿，覆盖中国百强企业 60% | 来源: IT之家 | 发布时间: 2026-11-18 ([原文链接](https://www.ithome.com/1/029/110.htm))  
-  - *推荐理由*：WorkBuddy 成为首个验证“企业级 AI 应用货币化飞轮”的产品——高 DAU → 高 Token 消耗 → 高模型迭代投入 → 更强场景覆盖 → 更高付费转化，形成正向循环。  
-
-- **豆包工作日活突破 800 万，企业 ARR 突破 20 亿元** 豆包工作上线三个月 DAU 突破 800 万，企业客户 ARR 超 20 亿元；11 月 16 日上线“工作台”功能，覆盖金融、医疗等 21 个专业场景，并接入 Kimi、GLM、DeepSeek 等第三方模型，支持按额度消耗倍率自主选模 | 来源: 雷峰网 | 发布时间: 2026-11-18 ([原文链接](https://www.leiphone.com/category/industrynews/cC8dbvo5f5k5tgnE.html))  
-  - *推荐理由*：豆包工作以“专业工作台+多模型路由”双引擎，破解企业 AI 应用“场景碎片化”与“模型选择难”两大痛点，标志着国内 AI 产品从通用助手迈向垂直生产力操作系统。  
-
-- **36 氪研究院发布《2026 年中国词元经济生态发展研究报告》** 报告指出，“词元（Token）”已成为智能服务基础计量单位，国务院《“人工智能+”行动意见》明确其战略地位；全国科技术语委已审定“词元”为标准术语，多地试点 Token 交易结算平台 | 来源: 36氪 | 发布时间: 2026-11-18 ([原文链接](https://36kr.com/p/4075073010996352?f=rss))  
-  - *推荐理由*：Token 从技术概念升维为经济基础设施，标志着 AI 产业正式迈入“可计量、可定价、可交易”的成熟市场阶段，将催生词元银行、Token 期货、算力证券化等全新金融形态。
-
-### 🚨 应急业务  
-- **《消防技术服务机构备案办法(征求意见稿)》公开征求意见** 国家消防救援局就《消防技术服务机构备案办法(征求意见稿)》向社会公开征求意见，旨在规范社会消防技术服务活动，强化事中事后监管，明确备案条件、程序及信用惩戒机制 | 来源: 微观消防 | 发布时间: 2026-11-18 ([原文链接](https://mp.weixin.qq.com/s?src=11&amp;timestamp=1795048208&amp;ver=7097&amp;signature=6X1Idn2H6OHkWseFgLZezEzot1iW9wDh0f*egD-47sokCGP9JO83zR5gZs2IHseJCESFwdGRUlWsevBAIDG83KyfcZXshxFlWgwnhDIm-3u0ia0JE08ZtA6sMrwJJ6-f&amp;new=1))  
-  - *推荐理由*：该办法将推动消防技术服务从“资质审批”转向“备案+信用”监管，为 AI 驱动的智能巡检、建筑病害识别等新技术服务商提供合规准入通道，加速技术与监管体系协同进化。  
-
-- **上海市住建委发布科技创新平台（第三批）名单** 上海市住建委公布第三批科技创新平台名单，聚焦工程技术创新中心与重点实验室，重点支持房屋安全监测、城市更新数字孪生、低空基础设施智能运维等方向的技术研发与成果转化 | 来源: 中国建设报 | 发布时间: 2026-11-18 ([原文链接](https://mp.weixin.qq.com/s?src=11&amp;timestamp=1795048273&amp;ver=7097&amp;signature=PR765J7Ppxm0hipf29GiOLum77yQh*2TXxRyKG2ZdEeQListzlZpCgQOQjNAzTepvBXD-QbN3L93deZ0HliQz-Sp65J-0ImhUud0beMCkTxKm2l5n1ixPgDSNKUke-nu&amp;new=1))  
-  - *推荐理由*：平台建设直指“房屋安全天空地一体化监测”技术落地堵点，为 InSAR 形变分析、无人机倾斜摄影建模、地面沉降仪组网等技术提供中试验证与标准制定载体，夯实城市生命线工程数字底座。  
-
-- **《江苏应急管理》2026 年第 11 期聚焦数智赋能应急治理** 《江苏应急管理》2026 年第 11 期以“数智之力筑安全之盾”为卷首语，系统刊载基于多源遥感与边缘 AI 的森林火险早期识别、高层建筑电梯井烟气扩散模拟、微型消防站智能调度算法等实践案例 | 来源: 江苏安全宣教 | 发布时间: 2026-11-12 ([原文链接](https://mp.weixin.qq.com/s?src=11&amp;timestamp=1795048217&amp;ver=7097&amp;signature=2Ia1xw4mbizjv1bP01*sTAXeI0JYhNOv3fYM*yoOIYG65dSpuezbhbo-*IJ5TBKl0ySmAqWp6Q*X4rS8zpUQTI0r6QvjBKM6QlbxYVD2iM96NSUgctDUAPLBLGGE5rPS&amp;new=1))  
-  - *推荐理由*：期刊内容体现“智慧消防”已从硬件联网升级为模型驱动——通过融合卫星热源、无人机红外、地面传感器数据训练火灾演化预测模型，实现从“被动响应”到“主动干预”的质变。
-
-- **《江西省气象灾害防御重点单位气象安全管理办法》施行** 《江西省气象灾害防御重点单位气象安全管理办法》于 2023 年 3 月施行，2026 年持续深化落实，明确电力、交通、危化等重点单位须接入省级气象预警平台，建立 AI 驱动的灾害风险动态评估与应急响应联动机制 | 来源: 上犹气象 | 发布时间: 2026-11-14 ([原文链接](https://mp.weixin.qq.com/s?src=11&amp;timestamp=1795048230&amp;ver=7097&amp;signature=KMALu29dZrp5R4RvqLNXE*jmbuaHw5AuDL2T6u65CB7s24*JqOpKG0nP5u1bpN2VYvhYAxJ5*xp8qI-an*73BAdcPamood-jNH0f6yfKWBu1c38huwcF3UuplkdMkWZY&amp;new=1))  
-  - *推荐理由*：办法将气象数据与 AI 风险模型深度耦合，要求重点单位基于实时气象数据自动触发应急预案，是“AI+应急”从单点算法向制度化、流程化、自动化响应体系跃迁的关键政策支点。
-
-### 🧠 算法专项  
-- **Google DeepMind 开放 Genie 4 世界模型体验** Google DeepMind 向 Google AI Ultra 订阅者开放 Project Genie 新体验，首次提供 Genie 4，并同步更新 Genie 3，标志着其世界模型进入可交互、可部署新阶段 | 来源: Google DeepMind Blog | 发布时间: 2026-11-18 ([原文链接](https://deepmind.google/blog/genie-4-is-now-available/))  
-  - *推荐理由*：Genie 4 是首个面向终端用户开放的世界模型，具备实时环境建模与动作规划能力，将推动具身智能从仿真走向真实物理系统闭环控制，对机器人、自动驾驶等场景具有范式级意义。  
-
-- **腾讯混元 Hy4 flash 开放权重（含 FP8 与 Base 版）** 腾讯混元正式开源 Hy4 flash-FP8 与 Hy4 flash-Base 双版本，224B 参数（激活仅 12B）、1M 上下文、原生多模态，定位高效日常生产力场景，采用 Tencent Hy License 协议 | 来源: 腾讯混元 X 官号 | 发布时间: 2026-11-18 ([原文链接](https://x.com/TencentHunyuan/status/2122912575302119554))  
-  - *推荐理由*：FP8 量化+轻量激活设计显著降低推理门槛，结合 Hugging Face/GitHub 双渠道分发，有望成为国产大模型在边缘端与中小企业私有化部署的标杆基座。  
-
-- **苹果开源 FastFrames 视频生成模型，单卡延迟仅 36 毫秒** 苹果开源 FastFrames-S（13 亿参数）与 FastFrames-L（140 亿参数）视频生成模型，FastFrames-S 在 B200 GPU 上生成 480P 视频延迟仅 36ms，速度达基线模型 7.6 倍，且技术方案可迁移至其他模型加速 | 来源: 智东西 | 发布时间: 2026-11-18 ([原文链接](https://zhidx.com/p/611830.html))  
-  - *推荐理由*：苹果以硬件协同优化思路突破视频生成实时瓶颈，36ms 延迟逼近人类视觉暂留极限（40ms），为 AR/VR、实时协作、智能终端视频创作开辟全新交互范式。  
-
-- **OpenAI 发布芯片设计最新成果：AMD GPU PPA 提升 14%，Jalapeño 面积减 13%** OpenAI 利用自研模型辅助芯片设计，在不到 5 个月内为 AMD 旗舰 GPU 实现最高 14% 的性能-功耗-面积（PPA）提升，相当于一年额外研发进度；自研推理芯片 Jalapeño 面积减少 13%，收益已在流片硅片验证 | 来源: IT之家 | 发布时间: 2026-11-18 ([原文链接](https://www.ithome.com/1/029/135.htm))  
-  - *推荐理由*：AI for Chip Design 进入工程兑现期，OpenAI 模型已从“辅助写脚本”跃迁至“主导关键模块优化”，预示下一代 AI 芯片将由 AI 自主定义，硬件创新范式发生根本性变革。  
-
-- **Hugging Face 开源 LoRA 适配器，将 Qwen3.8-27B 编程能力提升至 64.7%** Hugging Face 开源 Rank-32 LoRA 适配器 harness-hub/Qwen3.8-27B-pi-adapted（Apache-2.0），不替换基座模型，仅增加轻量适配层，使 Qwen3.8-27B 在 SWE-bench Pro hard-51 上通过率从 39.2% 提升至 64.7% | 来源: 掘金 人工智能 | 发布时间: 2026-11-18 ([原文链接](https://juejin.cn/post/7709381318992478262))  
-  - *推荐理由*：该方案验证了“小而精”的 LoRA 微调在编程智能体领域的巨大潜力，以极低成本（&lt;1% 参数增量）实现质的飞跃，为中小企业在有限算力下快速构建高可用编程 Agent 提供即插即用方案。  
-
-- **AR-WAM：面向自动驾驶的高效流式世界-动作建模方法** arXiv 新论文提出 AR-WAM 框架，通过流式处理视频帧与动作序列，避免重复历史编码与迭代生成，显著降低自动驾驶世界模型推理延迟与显存占用，支持实时响应突发路况 | 来源: arXiv | 发布时间: 2026-11-18 ([原文链接](https://arxiv.org/abs/2611.21851))  
-  - *推荐理由*：直击当前视频 foundation model 在车载端部署的核心瓶颈——计算冗余，其流式架构为 L4 级自动驾驶提供低延迟、低功耗的世界模型落地路径，工程实用性远超纯学术创新。  
-
-- **RetiDual-Select：面向视网膜 OCT 图像质量漂移的可靠性感知路由方法** 论文提出 RetiDual-Select，融合视网膜专科模型 RETFound 与医学多模态模型 MedSigLIP 编码器，通过动态路由机制在图像质量下降时自动切换专家模型，提升 OCT 诊断鲁棒性 | 来源: arXiv | 发布时间: 2026-11-18 ([原文链接](https://arxiv.org/abs/2611.22117))  
-  - *推荐理由*：解决医疗 AI 落地最大障碍——临床图像质量不稳定，其“专家-通才”双路路由机制无需重训模型，即可在基层医院低质影像条件下保持高诊断精度，具备极强现实推广价值。  
-
-- **Cross3DGS：基于 Vulkan 的跨平台 3D 高斯泼溅训练框架** arXiv 新论文 Cross3DGS 实现从工作站到移动设备的统一 3DGS 训练，基于 Vulkan 构建跨平台内核，支持在手机、笔记本等设备上直接训练手持拍摄场景，摆脱 CUDA 工作站依赖 | 来源: arXiv | 发布时间: 2026-11-18 ([原文链接](https://arxiv.org/abs/2611.22240))  
-  - *推荐理由*：突破 3DGS 训练对高端 GPU 的刚性依赖，Vulkan 后端使其可在 ARM 设备（如 iPad Pro、高端安卓手机）运行，为建筑病害三维重建、低空巡检点云建模等应急场景提供端侧实时建模能力。  
-</textarea>
 
    <script>
        // AI 推荐评分映射（仅 today 有；历史早报 tab 无评分显示）
        // 由后端 render() 注入：url -> score
-       const SCORES_MAP = {"https://x.com/OpenBMB/status/2125575267217531181": 95.0, "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/": 92.0, "https://mp.weixin.qq.com/s/jZumD5cprhI7bgmOI7mUEw": 92.0, "https://dev.to/googleai/how-context-drift-impacts-your-ai-agents-1iph": 91.0, "https://www.ithome.com/1/031/983.htm": 89.0, "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/": 88.0, "https://x.com/rohanpaul_ai/status/2125461932111229203": 86.0, "https://pydantic.dev/articles/pax-harness-beta": 85.0, "https://x.com/gdb/status/2125418102049628201": 85.0, "https://x.com/openclaw/status/2125591827600531554": 82.0, "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in": 78.0, "https://x.com/addyosmani/status/2125492213903978917": 76.0, "https://x.com/higgsfield/status/2125732778763231492": 94.0, "https://www.leiphone.com/category/industrynews/L9rc3Khgc8pFgYtD.html": 94.0, "https://github.com/EL4CTEO/fast-anything": 94.0, "https://36kr.com/newsflashes/4085858313333121?f=rss": 92.0, "https://x.com/rohanpaul_ai/status/2125694070748311778": 92.0, "https://zhidx.com/p/614304.html": 92.0, "https://zhidx.com/p/614244.html": 92.0, "https://www.ithome.com/1/032/551.htm": 91.0, "https://github.com/pierridotite/mobile-agent-testers": 91.0, "https://36kr.com/newsflashes/4085856235661959?f=rss": 90.0, "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/": 90.0, "https://github.com/w01fb0ss/PiBot": 90.0, "https://mp.weixin.qq.com/s/imyBR200J_Pd9-Qc4gH5cw": 93.0, "https://mp.weixin.qq.com/s/I7G2sT8NyOGX4ATH36-RjQ": 88.0, "https://www.aqsc.cn/content/202611/25/c302000.html": 88.0, "https://mp.weixin.qq.com/s/IQkUYE-wLnHrEABCKwuU1Q": 87.0, "https://www.mem.gov.cn/xw/jyll/202611/t20261125_740589.shtml": 86.0, "https://mp.weixin.qq.com/s/gQk9YBhQiZiCseGFORwiMw": 86.0, "https://mp.weixin.qq.com/s/IdKb1DE_p0f1FfiL1hjZgg": 85.0, "https://www.aqsc.cn/content/202611/25/c301995.html": 85.0, "https://mp.weixin.qq.com/s/pn4u7Cdko9sGrMkrFwqzDg": 82.0, "https://www.aqsc.cn/content/202611/25/c301965.html": 82.0, "https://mp.weixin.qq.com/s/Ovdp7vIKjkQxQIz0RNnw0A": 78.0, "https://mp.weixin.qq.com/s/_CrmK6I31UNx5FkgEqw-8g": 78.0, "https://juejin.cn/post/7711983801211895844": 90.0, "https://arxiv.org/abs/2611.31673": 90.0, "https://arxiv.org/abs/2611.31435": 89.0, "https://arxiv.org/abs/2611.31424": 89.0, "https://arxiv.org/abs/2611.31638": 89.0, "https://arxiv.org/abs/2611.31884": 89.0, "https://www.qbitai.com/2026/11/512748.html": 88.0, "https://juejin.cn/post/7712008429044383778": 88.0, "https://arxiv.org/abs/2611.31392": 88.0, "https://arxiv.org/abs/2611.31520": 88.0, "https://arxiv.org/abs/2611.31664": 88.0, "https://arxiv.org/abs/2611.31774": 88.0};
+       const SCORES_MAP = {"https://www.minimax.io/blog/minimax-h3-family": 92.0, "https://x.com/rohanpaul_ai/status/2125847124600656142": 86.0, "https://x.com/_philschmid/status/2125945282072297794": 80.0, "https://x.com/adocomplete/status/2125994186252161315": 95.0, "https://github.com/alesha-pro/llm.asm": 95.0, "https://github.com/EL4CTEO/fast-anything": 94.0, "https://x.com/robbyant_brain/status/2126020732610302086": 93.0, "https://www.ithome.com/1/033/125.htm": 93.0, "https://github.com/nexu-io/opengame": 93.0, "https://github.com/sybil-solutions/inference-optimisation-skill": 93.0, "https://x.com/adocomplete/status/2125999149619532229": 92.0, "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/": 92.0, "https://www.ithome.com/1/033/101.htm": 92.0, "https://36kr.com/p/4085971424995714?f=rss": 92.0, "https://36kr.com/newsflashes/4087220747418246?f=rss": 91.0, "https://www.aqsc.cn/content/202611/26/c302049.html": 92.0, "https://mp.weixin.qq.com/s/uGFUlpE8IRJodZgL5F0zvQ": 89.0, "https://mp.weixin.qq.com/s/u9_qRtyDFn5xZilcR7nO2Q": 88.0, "https://www.aqsc.cn/content/202611/26/c302055.html": 88.0, "https://mp.weixin.qq.com/s/kO-joyasWbAbWRoNPjvmww": 87.0, "https://www.aqsc.cn/content/202611/26/c302107.html": 87.0, "https://mp.weixin.qq.com/s/7yPhJ7kuz1rVoMqWsKCySg": 86.0, "https://www.aqsc.cn/content/202611/26/c302081.html": 86.0, "https://mp.weixin.qq.com/s/0YMEN_Jk566jb6dpqm2INg": 85.0, "https://www.aqsc.cn/content/202611/26/c302088.html": 84.0, "https://www.aqsc.cn/content/202611/26/c302089.html": 83.0, "https://mp.weixin.qq.com/s/g332YxZOwQGpelRzYm9BWA": 82.0, "https://juejin.cn/post/7712535963519533066": 92.0, "https://juejin.cn/post/7712359514977255465": 92.0, "https://mp.weixin.qq.com/s/DWkm7vUhp4avlz_tD4_8VQ": 91.0, "https://juejin.cn/post/7712312106733371411": 90.0, "https://arxiv.org/abs/2611.33475": 89.0, "https://arxiv.org/abs/2611.33160": 89.0, "https://arxiv.org/abs/2611.33402": 89.0, "https://arxiv.org/abs/2611.33836": 89.0, "https://juejin.cn/post/7712130561376665636": 88.0, "https://www.qbitai.com/2026/11/512916.html": 88.0, "https://arxiv.org/abs/2611.33339": 88.0, "https://arxiv.org/abs/2611.33474": 88.0};
 
        // 分类配置
        const CATEGORY_CONFIG = {
@@ -1527,7 +1516,7 @@
 
        // 日期元信息（render 时注入，供历史下拉与顶部日期联动使用）
        // 结构: today/day_1..day_7 各含 date_display / date_iso / weekday
-       const DAY_META = {"today": {"date_display": "2026年11月26日", "date_iso": "2026-11-26", "weekday": "周四"}, "day_1": {"date_display": "2026年11月25日", "date_iso": "2026-11-25", "weekday": "周三"}, "day_2": {"date_display": "2026年11月24日", "date_iso": "2026-11-24", "weekday": "周二"}, "day_3": {"date_display": "2026年11月23日", "date_iso": "2026-11-23", "weekday": "周一"}, "day_4": {"date_display": "2026年11月22日", "date_iso": "2026-11-22", "weekday": "周日"}, "day_5": {"date_display": "2026年11月21日", "date_iso": "2026-11-21", "weekday": "周六"}, "day_6": {"date_display": "2026年11月20日", "date_iso": "2026-11-20", "weekday": "周五"}, "day_7": {"date_display": "2026年11月19日", "date_iso": "2026-11-19", "weekday": "周四"}};
+       const DAY_META = {"today": {"date_display": "2026年11月27日", "date_iso": "2026-11-27", "weekday": "周五"}, "day_1": {"date_display": "2026年11月26日", "date_iso": "2026-11-26", "weekday": "周四"}, "day_2": {"date_display": "2026年11月25日", "date_iso": "2026-11-25", "weekday": "周三"}, "day_3": {"date_display": "2026年11月24日", "date_iso": "2026-11-24", "weekday": "周二"}, "day_4": {"date_display": "2026年11月23日", "date_iso": "2026-11-23", "weekday": "周一"}, "day_5": {"date_display": "2026年11月22日", "date_iso": "2026-11-22", "weekday": "周日"}, "day_6": {"date_display": "2026年11月21日", "date_iso": "2026-11-21", "weekday": "周六"}, "day_7": {"date_display": "2026年11月20日", "date_iso": "2026-11-20", "weekday": "周五"}};
 
        // 历史记录列表（今天放第一位，方便从历史日期返回今天）
        const HISTORY_DAYS = ['today', 'day_1', 'day_2', 'day_3', 'day_4', 'day_5', 'day_6', 'day_7'];
